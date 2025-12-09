@@ -1,0 +1,609 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2fef3;
+    color: #1d3124;
+}
+
+/* Header */
+header {
+    background-color: #2e3d2f;
+    color: #e8f5e9;
+    padding: 15px 40px;
+}
+
+.header-superior {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+#tituloPrincipal {
+    font-size: 1.8em;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #e8f5e9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7;
+}
+
+
+#tituloPrincipal {
+    font-size: 1.8em;
+}
+
+/* Portada ocupa toda la pantalla */
+.portada {
+    height: 100vh;
+    background-image: url('/multimedia/imagenMundoVerde.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.portada::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 40, 20, 0.5);
+    z-index: 1;
+}
+
+.contenido-portada {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.contenido-portada h2 {
+    font-size: 4vw;
+    color: #b4d8b6;
+}
+
+.contenido-portada p {
+    font-size: 2vw;
+    margin-top: 10px;
+    color: #b4d8b6;
+}
+
+/* Secciones amplias */
+main section, article, #proyectosEnCurso {
+    padding: 40px 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcefdc;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #54b659;
+    margin-bottom: 10px;
+}
+
+/* Login box */
+.contenedorInicioDeSesion {
+    background: #eafae7;
+    padding: 30px;
+    margin: 30px 60px;
+    border-left: 5px solid #81c784;
+    border-radius: 6px;
+}
+
+.contenedorInicioDeSesion input {
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botonDeIngreso {
+    background-color: #66bb6a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botonDeIngreso:hover {
+    background-color: #558b57;
+}
+
+#infoDeLaPagina {
+    padding: 40px 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.infoDeMundoVerde {
+    background-color: #f3fdf2;
+    padding: 30px;
+    border-left: 5px solid #81c784;
+    border-radius: 8px;
+}
+
+.infoDeMundoVerde h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.infoDeMundoVerde p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #1b301d;
+}
+
+#planesAFuturo {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #1b301d;
+    padding: 40px 60px;
+}
+
+#planesAFuturo h2, .planes h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.planes h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.planes p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #1b301d;
+
+}
+
+/* Proyectos */
+.proyecto {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9fff9;
+    border-left: 4px solid #a5d6a7;
+}
+
+#proyectosEnCurso h4{
+    color: #0f6b13;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.boton1 {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #66bb6a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Galería */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 60px;
+    background-color: #f3fdf2;
+}
+
+.contenedor img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.contenedor p {
+    text-align: center;
+    font-size: 0.95em;
+    color: #2e3d2f;
+}
+
+/* Testimonios */
+blockquote {
+    background-color: #eafae7;
+    padding: 15px 25px;
+    margin: 20px 60px;
+    border-left: 5px solid #81c784;
+    font-style: italic;
+}
+
+.boton1:hover {
+    background-color: #558b57;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos base para testimonios */
+#testimonios {
+    padding: 40px 60px;
+    background-color: #ffffff;
+}
+
+#testimonios h4 {
+    font-size: 2em;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#testimonios blockquote {
+    background-color: #eafae7;
+    padding: 20px 30px;
+    margin: 20px auto;
+    border-left: 5px solid #81c784;
+    font-style: italic;
+    font-size: 1em;
+    max-width: 900px;
+    line-height: 1.6;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e3d2f;
+    color: #c8e6c9;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Celular*/
+@media screen and (max-width: 480px) {
+    header, .contenedor, main section, .contenedorInicioDeSesion, blockquote {
+        padding: 20px;
+    }
+
+    .header-superior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #tituloPrincipal {
+        font-size: 1.3em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenido-portada h2 {
+        font-size: 7vw;
+    }
+
+    .contenido-portada p {
+        font-size: 4vw;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    #infoDeLaPagina {
+        padding: 20px;
+    }
+
+    .infoDeMundoVerde h2 {
+        font-size: 1.5em;
+    }
+
+    .infoDeMundoVerde p {
+        font-size: 0.95em;
+    }
+
+        #proyectosEnCurso {
+        padding: 20px;
+    }
+
+    #proyectosEnCurso h4 {
+        font-size: 1.6em;
+    }
+
+    .proyecto p {
+        font-size: 0.95em;
+    }
+
+    .boton1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #testimonios {
+        padding: 20px;
+    }
+
+    #testimonios h4 {
+        font-size: 1.5em;
+    }
+
+    #testimonios blockquote {
+        font-size: 0.95em;
+        padding: 15px 20px;
+    }
+
+    #planesAFuturo {
+        padding: 20px;
+        font-size: 0.95em;
+    }
+
+    #planesAFuturo h2, .planes h2 {
+        font-size: 1.4em;
+    }
+
+    #planesAFuturo p, .planes p {
+        font-size: 0.95em;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header-superior {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #tituloPrincipal {
+        font-size: 1.5em;
+    }
+
+    .contenido-portada h2 {
+        font-size: 5vw;
+    }
+
+    .contenido-portada p {
+        font-size: 2.8vw;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #infoDeLaPagina {
+        padding: 30px;
+    }
+
+    .infoDeMundoVerde h2 {
+        font-size: 1.8em;
+    }
+
+    .infoDeMundoVerde p {
+        font-size: 1em;
+    }
+
+    #proyectosEnCurso {
+        padding: 30px;
+    }
+
+    #proyectosEnCurso h4 {
+        font-size: 1.8em;
+    }
+
+    .proyecto p {
+        font-size: 1em;
+    }
+
+    #testimonios {
+        padding: 30px;
+    }
+
+    #testimonios h4 {
+        font-size: 1.8em;
+    }
+
+    #testimonios blockquote {
+        font-size: 1em;
+        padding: 18px 25px;
+    }
+
+    #planesAFuturo {
+        padding: 30px 30px;
+        font-size: 1em;
+    }
+
+    #planesAFuturo h2, .planes h2 {
+        font-size: 1.6em;
+    }
+
+    #planesAFuturo p, .planes p {
+        font-size: 1em;
+    }
+}
+
+/*Monitor*/
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    #tituloPrincipal {
+        font-size: 1.8em;
+    }
+
+    .contenido-portada h2 {
+        font-size: 3.5vw;
+    }
+
+    .contenido-portada p {
+        font-size: 1.8vw;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .proyecto p {
+        font-size: 1.05em;
+    }
+
+    .boton1 {
+        font-size: 1em;
+    }
+
+    .infoDeMundoVerde h2 {
+        font-size: 2em;
+    }
+
+    .infoDeMundoVerde p {
+        font-size: 1.1em;
+    }
+
+
+    #testimonios h4 {
+        font-size: 2.2em;
+    }
+
+    #testimonios blockquote {
+        font-size: 1.1em;
+        padding: 25px 40px;
+    }
+
+    #planesAFuturo {
+        padding: 40px 60px;
+        font-size: 1.05em;
+    }
+
+    #planesAFuturo h2, .planes h2 {
+        font-size: 1.8em;
+    }
+
+    #planesAFuturo p, .planes p {
+        font-size: 1.05em;
+    }
+}
+
+/*Televisor*/
+@media (min-width: 1441px) {
+    #tituloPrincipal {
+        font-size: 2.2em;
+    }
+
+    .contenido-portada h2 {
+        font-size: 2.5vw;
+    }
+
+    .contenido-portada p {
+        font-size: 1.5vw;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    main section, .contenedorInicioDeSesion {
+        padding: 60px 100px;
+    }
+
+    #infoDeLaPagina {
+        padding: 80px 120px;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .infoDeMundoVerde {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .infoDeMundoVerde h2 {
+        font-size: 2.4em;
+    }
+
+    .infoDeMundoVerde p {
+        font-size: 1.3em;
+    }
+
+    #proyectosEnCurso {
+        padding: 80px 120px;
+    }
+
+    #proyectosEnCurso h4 {
+        font-size: 2.4em;
+    }
+
+    .proyecto {
+        padding: 30px;
+    }
+
+    .proyecto p {
+        font-size: 1.2em;
+    }
+
+    .boton1 {
+        font-size: 1.1em;
+        padding: 12px 26px;
+    }
+
+    #testimonios {
+        padding: 80px 120px;
+    }
+
+    #testimonios h4 {
+        font-size: 2.5em;
+    }
+
+    #testimonios blockquote {
+        font-size: 1.3em;
+        padding: 30px 50px;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #planesAFuturo {
+        padding: 60px 100px;
+        font-size: 1.1em;
+    }
+
+    #planesAFuturo h2, .planes h2 {
+        font-size: 2.2em;
+    }
+
+    #planesAFuturo p, .planes p {
+        font-size: 1.1em;
+    }
+}

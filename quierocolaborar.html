@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaborar | Mundo Verde</title>
+    <link rel="stylesheet" href="css/styleQuierocolaborar.css">
+</head>
+
+<body>
+<!------Menu------>
+    <header>
+        <div class="header-superior">
+            <a href="index.html">
+                <img src="multimedia/logoMundoVerde.png" alt="Logo Mundo Verde" width="80" height="65" title="Mundo Verde">
+            </a>
+            <h1><i><span id="tituloPrincipal">¡Nuestra Organización ambiental!</span></i></h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quierocolaborar.html">Colaborar de forma voluntaria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulario de Colaboración</h2>
+        <form id="colaborarForm">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tipoColaboracion">¿Cómo deseas colaborar?</label>
+        <select id="tipoColaboracion" name="tipoColaboracion" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="dinero">Con dinero</option>
+            <option value="trabajo">Con trabajo</option>
+            <option value="difusion">Con difusión</option>
+        </select>
+
+        <div id="dineroSection" class="conditional-section">
+            <label for="monto">Monto a donar:</label>
+            <select id="monto">
+            <option>$5000</option>
+            <option>$10000</option>
+            <option>$20000</option>
+            <option>Otro</option>
+            </select>
+
+            <label for="frecuencia">Frecuencia:</label>
+            <select id="frecuencia">
+            <option>Por única vez</option>
+            <option>Mensual</option>
+            </select>
+        </div>
+
+        <div id="trabajoSection" class="conditional-section">
+            <label for="area">Área en la que puedes colaborar:</label>
+            <select id="area">
+            <option>Educación</option>
+            <option>Salud</option>
+            <option>Logística</option>
+            <option>Comunicación</option>
+            </select>
+
+            <label for="horas">Disponibilidad horaria semanal:</label>
+            <input type="number" id="horas" min="1" max="40">
+        </div>
+
+        <div id="difusionSection" class="conditional-section">
+            <label for="canal">¿Dónde puedes difundir nuestras campañas?</label>
+            <textarea id="canal" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Enviar colaboración</button>
+        </form>
+    </main>
+
+    <footer>
+        <p><i><strong>Autor:</strong>Eric Gabriel Castillo <br><strong>Comisión 6</strong></i></p>
+    </footer>
+    <script src="/44884434/js/scriptsQuieroColaborar.js"></script>
+</body>
+</html>

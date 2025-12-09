@@ -1,0 +1,231 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2fef3;
+    color: #1d3124;
+}
+
+/* Header */
+header {
+    background-color: #2e3d2f;
+    color: #e8f5e9;
+    padding: 15px 40px;
+}
+
+.header-superior {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+#tituloPrincipal {
+    font-size: 1.8em;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #e8f5e9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7;
+}
+
+#tituloPrincipal {
+    font-size: 1.8em;
+}
+
+/* Main */
+main {
+    padding: 40px 60px;
+    background-color: #ffffff;
+}
+
+main h2 {
+    font-size: 2em;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+form {
+    background-color: #eafae7;
+    padding: 30px;
+    border-left: 5px solid #81c784;
+    border-radius: 6px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #1d3124;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Secciones condicionales */
+.conditional-section {
+    margin-top: 20px;
+    background-color: #f9fff9;
+    padding: 20px;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+}
+
+/* Botón */
+button[type="submit"] {
+    background-color: #66bb6a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #558b57;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #2e3d2f;
+    color: #c8e6c9;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Celulares*/
+@media (max-width: 480px) {
+    header, main, form, footer {
+        padding: 20px;
+    }
+
+    .header-superior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #tituloPrincipal {
+        font-size: 1.3em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.95em;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/*Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-superior {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #tituloPrincipal {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1em;
+    }
+}
+
+/*Monitor*/
+@media (min-width: 769px) and (max-width: 1440px) {
+    #tituloPrincipal {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 40px 60px;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+}
+
+/*Televisor*/
+@media (min-width: 1441px) {
+    #tituloPrincipal {
+        font-size: 2.2em;
+    }
+
+    main {
+        padding: 60px 100px;
+    }
+
+    form {
+        padding: 40px;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        font-size: 1.1em;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1em;
+    }
+}
